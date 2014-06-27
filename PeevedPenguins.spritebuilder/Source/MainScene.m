@@ -9,15 +9,18 @@
 #import "MainScene.h"
 
 @implementation MainScene
-
+/*
 - (void)play{
     //CCLOG(@"Play button pressed");
     //NSLog(@"Play");
     //what is the difference between the two?
     
-    //CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
-    //[[CCDirector sharedDirector] replaceScene:gameplayScene];
-    
-    [CCBReader loadAsScene:@"Gameplay"];
+    CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:gameplayScene];
+}
+*/
+
+- (CCScene *)play{
+    return [CCBReader loadAsScene:@"Gameplay"];
 }
 @end
