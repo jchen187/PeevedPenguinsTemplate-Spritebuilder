@@ -49,7 +49,7 @@
     //[self launchPenguin];
 }
 
-- (void) touchMoved:(UITouch *)touch withEvet:(UIEvent *)event{
+- (void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
     //whenever touches move, update the position of the mousjoint node to the touchPosition
     CGPoint touchLocation = [touch locationInNode:_contentNode];
     _mouseJointNode.position = touchLocation;
