@@ -20,7 +20,7 @@
 }
 */
 
-- (CCScene *)play{
+- (CCScene*)play{
     return [CCBReader loadAsScene:@"Gameplay"];
 }
 @end
