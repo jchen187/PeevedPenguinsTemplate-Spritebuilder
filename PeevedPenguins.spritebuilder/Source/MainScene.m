@@ -11,7 +11,11 @@
 @implementation MainScene
 
 - (void)play{
-    CCLOG(@"Play button pressed");
-    NSLog(@"Play");
+    //CCLOG(@"Play button pressed");
+    //NSLog(@"Play");
+    //what is the difference between the two?
+    
+    CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
+    [[CCDirector sharedDirector] replaceScene:gameplayScene];
 }
 @end
