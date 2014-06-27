@@ -12,5 +12,6 @@
 
 - (void)play{
     CCLOG(@"Play button pressed");
+    NSLog(@"Play");
 }
 @end
