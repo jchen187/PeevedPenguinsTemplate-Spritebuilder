@@ -565,8 +565,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1187,6 +1185,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1210,7 +1210,7 @@
 									<key>allowsRotation</key>
 									<true/>
 									<key>bodyShape</key>
-									<integer>1</integer>
+									<integer>0</integer>
 									<key>collisionCategories</key>
 									<array/>
 									<key>collisionMask</key>
@@ -1222,7 +1222,7 @@
 									<key>density</key>
 									<real>1</real>
 									<key>dynamic</key>
-									<false/>
+									<true/>
 									<key>elasticity</key>
 									<real>0.30000001192092896</real>
 									<key>friction</key>
@@ -1233,9 +1233,40 @@
 											<real>0.0</real>
 											<real>0.0</real>
 										</array>
+										<array>
+											<real>0.0</real>
+											<real>32</real>
+										</array>
+										<array>
+											<real>32</real>
+											<real>32</real>
+										</array>
+										<array>
+											<real>32</real>
+											<real>0.0</real>
+										</array>
 									</array>
 									<key>polygons</key>
-									<array/>
+									<array>
+										<array>
+											<array>
+												<real>32</real>
+												<real>0.0</real>
+											</array>
+											<array>
+												<real>32</real>
+												<real>32</real>
+											</array>
+											<array>
+												<real>0.0</real>
+												<real>32</real>
+											</array>
+											<array>
+												<real>0.0</real>
+												<real>0.0</real>
+											</array>
+										</array>
+									</array>
 								</dict>
 								<key>properties</key>
 								<array>
