@@ -9,7 +9,7 @@
 #import "MainScene.h"
 
 @implementation MainScene
-/*
+
 - (void)play{
     //CCLOG(@"Play button pressed");
     //NSLog(@"Play");
@@ -18,9 +18,10 @@
     CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
     [[CCDirector sharedDirector] replaceScene:gameplayScene];
 }
-*/
 
+/*
 - (CCScene*)play{
     return [CCBReader loadAsScene:@"Gameplay"];
 }
+*/
 @end
