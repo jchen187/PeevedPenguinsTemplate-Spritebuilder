@@ -64,8 +64,9 @@
         
         //create a joint to keep the penguin fixed in the scoop until the catapult is released
         _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
-    }
+        
     //[self launchPenguin];
+    }
 }
 
 - (void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event{
