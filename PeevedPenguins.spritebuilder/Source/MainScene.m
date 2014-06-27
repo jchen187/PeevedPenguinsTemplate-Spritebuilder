@@ -15,9 +15,9 @@
     //NSLog(@"Play");
     //what is the difference between the two?
     
-    CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
-    [[CCDirector sharedDirector] replaceScene:gameplayScene];
+    //CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
+    //[[CCDirector sharedDirector] replaceScene:gameplayScene];
     
-    
+    [CCBReader loadAsScene:@"Gameplay"]
 }
 @end
