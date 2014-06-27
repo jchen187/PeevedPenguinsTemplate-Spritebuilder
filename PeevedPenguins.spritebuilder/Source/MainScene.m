@@ -18,6 +18,6 @@
     //CCScene *gameplayScene = [CCBReader loadAsScene:@"Gameplay"];
     //[[CCDirector sharedDirector] replaceScene:gameplayScene];
     
-    [CCBReader loadAsScene:@"Gameplay"]
+    [CCBReader loadAsScene:@"Gameplay"];
 }
 @end
