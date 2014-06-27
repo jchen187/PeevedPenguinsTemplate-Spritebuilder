@@ -53,12 +53,12 @@
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
     [self setupCocos2dWithOptions:cocos2dSetup];
-    
+    /*
     [CCBReader load:@"Penguin"];
     [CCBReader load:@"Seal"];
     //if i take away the 2 lines above, everything is fine
     //so it cant access it? but i named everything
-    
+    */
     return YES;
 }
 

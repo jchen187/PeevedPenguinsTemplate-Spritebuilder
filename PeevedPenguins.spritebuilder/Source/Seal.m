@@ -10,6 +10,7 @@
 
 @implementation Seal
 
+/*
 - (id)init{
     self = [super init];
     //the instance of seal that is created by calling the init of the super calss
@@ -19,4 +20,5 @@
     }
     return self;
 }
+*/
 @end
