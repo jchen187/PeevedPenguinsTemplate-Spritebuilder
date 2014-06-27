@@ -32,5 +32,9 @@
     
     //add the penguin to the physicsNode of this scene(because it has physics enabled)
     [_physicsNode addChild:penguin];
+    
+    CGPoint launchDirection = ccp(1,0);
+    CGPoint force = ccpMult(launchDirection, 800);
+    [penguin.physicsBody applyForce:force];
 }
 @end
