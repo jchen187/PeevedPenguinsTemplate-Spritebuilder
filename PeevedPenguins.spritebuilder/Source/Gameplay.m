@@ -45,8 +45,9 @@
     self.position = ccp(0,0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     //[self runAction:follow];
-    //the line on top is the old one
+    //the line on top is the old one where the retry button leaves the screen when we follow
     [_contentNode runAction:follow];
+    
     
 }
 
