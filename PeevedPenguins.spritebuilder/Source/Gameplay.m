@@ -13,6 +13,7 @@
     CCNode *_catapultArm;
     CCNode *_levelNode;
     CCNode *_contentNode;
+    CCNode *_pullBackNode;
 }
 
 //is called when CCB file has completed loading
@@ -26,7 +27,7 @@
     _physicsNode.debugDraw = TRUE;
     
     //nothing shall collide with our invisible nodes
-    _pullbackNode.physicsBody.collisionMask = @[];
+    _pullBackNode.physicsBody.collisionMask = @[];
 }
 
 //called on every touch in this scene
