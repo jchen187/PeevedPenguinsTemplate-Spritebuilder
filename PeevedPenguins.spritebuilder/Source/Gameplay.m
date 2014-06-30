@@ -73,22 +73,7 @@ static const float MIN_SPEED = 5.f;
         //create a joint to keep the penguin fixed in the scoop until the catapult is released
         _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
         
-        //[self launchPenguin];
-        [_penguinCatapultJoint invalidate];
-        _penguinCatapultJoint = nil;
-        
-        //after snapping rotation is fine
-        _currentPenguin.physicsBody.allowsRotation = TRUE;
-        /*
-         //follow the flying penguin
-         CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-         [_contentNode runAction:follow];
-         */
-        //follow the flying penguin
-        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-        [_contentNode runAction:_followPenguin];
-        
-        _currentPenguin.launched = TRUE;
+    //[self launchPenguin];
     }
 }
 
@@ -106,7 +91,21 @@ static const float MIN_SPEED = 5.f;
     }
     
     //releases the joint and lets the penguins fly
+    [_penguinCatapultJoint invalidate];
+    _penguinCatapultJoint = nil;
     
+    //after snapping rotation is fine
+    _currentPenguin.physicsBody.allowsRotation = TRUE;
+    /*
+    //follow the flying penguin
+    CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+    [_contentNode runAction:follow];
+    */
+    //follow the flying penguin
+    _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+    [_contentNode runAction:_followPenguin];
+    
+    _currentPenguin.launched = TRUE;
 }
 
 - (void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
