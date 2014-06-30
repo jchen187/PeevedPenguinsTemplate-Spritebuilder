@@ -18,11 +18,14 @@ static const float MIN_SPEED = 5.f;
     CCNode *_levelNode;
     CCNode *_contentNode;
     CCNode *_pullbackNode;
+    
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
+    
     //CCNode *_currentPenguin;
     Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
+    
     CCAction *_followPenguin;
 }
 
@@ -34,7 +37,7 @@ static const float MIN_SPEED = 5.f;
     [_levelNode addChild:level];
     
     //visualize physics bodies &joints
-    _physicsNode.debugDraw = TRUE;
+    //_physicsNode.debugDraw = TRUE;
     
     //nothing shall collide with our invisible nodes
     _pullbackNode.physicsBody.collisionMask = @[];
