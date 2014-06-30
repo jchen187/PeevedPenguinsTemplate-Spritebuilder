@@ -81,7 +81,6 @@ static const float MIN_SPEED = 5.f;
 }
 
 - (void) releaseCatapult{
-    _currentPenguin.launched = TRUE;
     
     if(_mouseJoint != nil){
         //releases the joint and lets the catapult snap back
@@ -103,6 +102,7 @@ static const float MIN_SPEED = 5.f;
     //follow the flying penguin
     _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
     [_contentNode runAction:_followPenguin];
+    _currentPenguin.launched = TRUE;
 }
 
 - (void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
